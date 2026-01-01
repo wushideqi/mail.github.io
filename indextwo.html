@@ -77,6 +77,13 @@
             opacity: 0;
             animation: fadeIn 1s ease 0.3s forwards;
         }
+        .text-section p {
+            margin-bottom: 15px; /* 段落间距离，可调整数值 */
+        }
+        /* 可选：最后一个段落可以取消底部间距，避免多余空白 */
+        .text-section p:last-child {
+            margin-bottom: 0;
+        }
 
         /* 视频封面容器样式 */
         .video-grid {
@@ -233,12 +240,11 @@
         </div>
         
         <div class="text-section">
-            这里是一些精选的有趣视频，点击封面即可跳转到对应的视频页面。页面会根据您的设备自动调整显示数量，让您获得最佳的观看体验。
-            <p>
-                目前只上传了第一个视频，后面的还只是壳子，明后天慢慢补充。
+            <p style="font-family:'宋体'; font-size:20px; text-align: center; font-weight: bold; color: #ff0000;">
+                这些是给主包准备的一些比较好玩的视频
             </p>
-            <p>
-                点击上面的大图回到第一页
+            <p style="font-family:'宋体'; font-size:20px; text-align: center; font-weight: bold; color: #000000;">
+                点击视频可以跳转到对应的视频页面
             </p>
         </div>
         
